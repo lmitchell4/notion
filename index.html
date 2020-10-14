@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Notion</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<!-- <link rel="icon" type="image/png" href="img/outlinebird1.png" />		 -->
+		<!-- <style type="css/style.css"> -->
+		<!-- </style> -->
+	</head>
+	<body>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <h1 class="text-left">Notion</h1>
+        </div>
+        <div class="col-xs-9">
+          <button id="reset" type="button" class="btn btn-default btn-lg">Reset</button>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div id="categories" class="col-xs-1">
+          <h4 id="anatomy" class="category">Anatomy</h4>
+          <h4 id="nature" class="category">Nature</h4>
+          <h4 id="materials" class="category">Materials</h4>
+          <h4 id="components" class="category">Components</h4>
+          <h4 id="shapes" class="category">Shapes</h4>
+          <h4 id="actions" class="category">Actions</h4>
+          <h4 id="colors" class="category">Colors</h4>
+        </div>
+        <div id="storage" class="col-xs-3">
+          <div class="col-xs-3 no-padding">
+            <div id="us-0" class="uspace"></div>
+            <div id="us-1" class="uspace"></div>
+            <div id="us-2" class="uspace"></div>
+            <div id="us-3" class="uspace"></div>
+            <div id="us-4" class="uspace"></div>
+            <div id="us-5" class="uspace"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="us-6" class="uspace"></div>
+            <div id="us-7" class="uspace"></div>
+            <div id="us-8" class="uspace"></div>
+            <div id="us-9" class="uspace"></div>
+            <div id="us-10" class="uspace"></div>
+            <div id="us-11" class="uspace"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="us-12" class="uspace"></div>
+            <div id="us-13" class="uspace"></div>
+            <div id="us-14" class="uspace"></div>
+            <div id="us-15" class="uspace"></div>
+            <div id="us-16" class="uspace"></div>
+            <div id="us-17" class="uspace"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="us-18" class="uspace"></div>
+            <div id="us-19" class="uspace"></div>
+            <div id="us-20" class="uspace"></div>
+            <div id="us-21" class="uspace"></div>
+            <div id="us-22" class="uspace"></div>
+            <div id="us-23" class="uspace"></div>
+          </div>
+        </div>
+        <div id="board" class="col-xs-7">
+          <div class="col-xs-3 no-padding">
+            <div id="s-0" class="space"></div>
+            <div id="s-1" class="space"></div>
+            <div id="s-2" class="space"></div>
+            <div id="s-3" class="space"></div>
+            <div id="s-4" class="space"></div>
+            <div id="s-5" class="space"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="s-6" class="space"></div>
+            <div id="s-7" class="space"></div>
+            <div id="s-8" class="space"></div>
+            <div id="s-9" class="space"></div>
+            <div id="s-10" class="space"></div>
+            <div id="s-11" class="space"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="s-12" class="space"></div>
+            <div id="s-13" class="space"></div>
+            <div id="s-14" class="space"></div>
+            <div id="s-15" class="space"></div>
+            <div id="s-16" class="space"></div>
+            <div id="s-17" class="space"></div>
+          </div>
+          <div class="col-xs-3 no-padding">
+            <div id="s-18" class="space"></div>
+            <div id="s-19" class="space"></div>
+            <div id="s-20" class="space"></div>
+            <div id="s-21" class="space"></div>
+            <div id="s-22" class="space"></div>
+            <div id="s-23" class="space"></div>
+          </div>
+        </div>
+        <div class="col-xs-1" id="options">
+          <button id="erase" type="button" class="btn btn-default btn-lg">Erase</button>          
+        </div>
+      </div>
+    </div>
+
+
+		<!-- <div id="board-container" class="column2of3"> -->
+
+			<!-- <p id="warningMsg">Javascript is needed<br>to play this game.</p> -->
+
+			<!-- <div id="gridMenu" class="column2of3"> -->
+				<!-- <div id="gridsize-container">	 -->
+					<!-- <p id="gridsizeLabel">Select a Grid Size</p> -->
+	
+					<!-- <div id="gridsizebutton-container"> -->
+						<!-- <input type="submit" class="size" id="4x4" value="4 x 4" / -->
+						<!-- ><input type="submit" class="size" id="6x6" value="6 x 6" /> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			
+		<!-- </div> -->
+
+		<!-- <div class="column3of3"> -->
+			
+			<!-- <div id="msgboard-container" class="column3of3"> -->
+				<!-- <p id="msgboard"></p>		 -->
+			<!-- </div>  -->
+			
+			<!-- <div id="control-container" class="column3of3"> -->
+				<!-- <div id="controlbutton-container"> -->
+					<!-- <input type="submit" class="control" id="newGame" value="New Game" /> -->
+					<!-- <input type="submit" class="control" id="solve" value="Solve" /> -->
+					<!-- <input type="submit" class="control" id="restartGame" value="Restart" /> -->
+					<!-- <input type="submit" class="control" id="hint" value="Hint" />		 -->
+				<!-- </div> -->
+			<!-- </div> -->
+
+			
+			<!-- <div id="speed-container" class="column3of3"> -->
+				<!-- <p id="speedLabel">Flip Speed</p> -->
+				<!-- <div id="speedbutton-container"> -->
+					<!-- <input type="submit" class="speed" id="slow" value="Slow" / -->
+					<!-- ><input type="submit" class="speed selected" id="medium" value="Medium" / -->
+					<!-- ><input type="submit" class="speed" id="fast" value="Fast" /> -->
+				<!-- </div> -->
+			<!-- </div> -->
+
+		<!-- </div> -->
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+		<script type="text/javascript" src="js/game.js"></script>
+	</body>
+</html>
+
+
+
+
